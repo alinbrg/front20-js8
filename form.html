@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<section>
+			<button class="open-reg-modal">open registration form</button>
+			<a href="index.html">back to main page</a>
+		</section>
+		<div class="modal reg-form-modal" id="reg-form-modal">
+			<div class="modal-content">
+				<button class="close-btn">X</button>
+				<!-- action="https://borjomi.loremipsum.ge/api/register"
+				method="POST" -->
+				<form id="register-user" novalidate>
+					<input type="hidden" id="user_id" />
+					<div class="form-row">
+						<label for="user_name">Enter User Name</label>
+
+						<input
+							type="text"
+							id="user_name"
+							placeholder="user name"
+							required
+							name="first_name"
+						/>
+						<span class="message"></span>
+					</div>
+					<div class="form-row">
+						<label for="user_surname">Enter User Last Name</label>
+
+						<input
+							type="text"
+							id="user_surname"
+							placeholder="user lastname"
+							required
+							name="last_name"
+						/>
+						<span class="message"></span>
+					</div>
+					<div class="form-row">
+						<label for="user_phone">Enter phone number</label>
+
+						<input
+							type="number"
+							id="user_phone"
+							placeholder="phone number"
+							required
+							name="phone"
+						/>
+
+						<span class="message"></span>
+					</div>
+					<div class="form-row">
+						<label for="user_personal-id">Enter personal id</label>
+
+						<input
+							type="number"
+							id="user_personal-id"
+							placeholder="personal id"
+							required
+							name="id_number"
+						/>
+
+						<span class="message"></span>
+					</div>
+					<div class="form-row">
+						<label for="user_email">Enter your Email</label>
+
+						<input
+							type="email"
+							id="user_email"
+							placeholder="email"
+							required
+							name="email"
+						/>
+						<span class="message"></span>
+					</div>
+					<div class="form-row">
+						<label for="user_zip-code">Enter your zip code</label>
+
+						<input
+							type="text"
+							id="user_zip-code"
+							placeholder="zip code"
+							required
+							name="zip_code"
+						/>
+
+						<span class="message"></span>
+					</div>
+					<div class="form-row gender-block">
+						<p>Select Gender</p>
+						<div>
+							<label for="male">
+								<input
+									type="radio"
+									id="male"
+									placeholder="gender"
+									name="gender"
+									value="male"
+								/>
+								<span>male</span>
+							</label>
+							<label for="female">
+								<input
+									type="radio"
+									id="female"
+									placeholder="gender"
+									name="gender"
+									value="female"
+								/>
+								<span>female</span>
+							</label>
+							<label for="other">
+								<input
+									type="radio"
+									id="other"
+									placeholder="gender"
+									name="gender"
+									value="other"
+									required
+								/>
+								<span>other</span>
+							</label>
+						</div>
+
+						<span class="error-message"></span>
+					</div>
+					<button type="submit" class="button submit-form">submit form</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="src/js/form.js"></script>
+	</body>
+</html>

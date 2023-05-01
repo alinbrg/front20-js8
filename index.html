@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lesson 20</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<section class="form">
+			<form action="/user" method="get" novalidate>
+				<div class="form-row">
+					<label for="name"> enter your name </label>
+
+					<input
+						type="name"
+						id="name"
+						name="name"
+						placeholder="enter your name"
+					/>
+					<span class="message" id="name-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="email"> enter your email </label>
+
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="enter your email"
+						required
+					/>
+					<span class="message" id="email-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="mobile_number"> enter your mobile number </label>
+
+					<input
+						type="text"
+						id="mobile_number"
+						name="mobile_number"
+						placeholder="enter your mobile number"
+					/>
+					<span class="message" id="mobile-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="password"> enter password </label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="enter password"
+						minlength="8"
+						required
+					/>
+
+					<span class="message" id="password-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="repeat_password"> repeat password </label>
+					<input
+						type="password"
+						id="repeat_password"
+						name="repeat_password"
+						placeholder="repeat password"
+						minlength="8"
+						required
+					/>
+
+					<span class="message" id="repeat_password-message"></span>
+				</div>
+				<button type="submit" class="button submit-form">submit form</button>
+			</form>
+		</section>
+		<button class="open-modal">open modal</button>
+
+		<div class="modal" id="success-modal">
+			<div class="modal-content">
+				<button class="close-btn">X</button>
+
+				<p class="modal-message">success message</p>
+			</div>
+		</div>
+		<div class="modal" id="error-modal">
+			<div class="modal-content">
+				<button class="close-btn">X</button>
+
+				<p class="modal-message">error message</p>
+			</div>
+		</div>
+
+		<a href="form.html">form page</a>
+		<script src="src/js/app.js"></script>
+	</body>
+</html>
