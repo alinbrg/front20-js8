@@ -179,3 +179,21 @@ input {
 
 	margin: auto;
 }
+table {
+	width: 100%;
+}
+table,
+tr,
+td,
+th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 5px;
+}
+.delete {
+	background-color: lightcoral;
+}
